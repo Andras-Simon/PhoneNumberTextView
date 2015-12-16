@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="co.cabsolutely.android.phonenumbertextview.TestActivity">
+
+    <co.cabsolutely.android.widgets.PhoneNumberTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view">
+
+    </co.cabsolutely.android.widgets.PhoneNumberTextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get ISO"
+        android:id="@+id/iso"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Code"
+        android:id="@+id/code"
+        android:layout_below="@+id/view"
+        android:layout_toRightOf="@+id/iso"
+        android:layout_toEndOf="@+id/iso" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Number"
+        android:id="@+id/formatted"
+        android:layout_below="@+id/view"
+        android:layout_toRightOf="@+id/code"
+        android:layout_toEndOf="@+id/code" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set error"
+        android:id="@+id/error"
+        android:layout_below="@+id/iso"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Raw Number"
+        android:id="@+id/raw"
+        android:layout_below="@+id/iso"
+        android:layout_toRightOf="@+id/error"
+        android:layout_toEndOf="@+id/error" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number length restriction on/off"
+        android:id="@+id/longer"
+        android:layout_below="@+id/error"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
